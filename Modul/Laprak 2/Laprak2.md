@@ -5,7 +5,7 @@ MongoDB Compass adalah tool berbasis Graphical User Interface (GUI) yang digunak
 
 ### Langkah Percobaan
 1. Lakukan koneksi ke MongoDB menggunakan connection string <br>
-![ss 1.1](../Screenshots/Laprak1/1.1.png)
+![ss 1.1](../Screenshots/1.1.png)
 2. Buat database dengan melakukan klik “Create Database”
 3. Lakukan insert buku pertama dengan melakukan klik “Add Data”, pilih “Insert Document”, isi dengan data yang diinginkan dan klik “Insert”
 4. Lakukan insert buku kedua dengan cara yang sama.
