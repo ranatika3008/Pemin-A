@@ -31,8 +31,19 @@ console.log(`Running on port ${PORT}`);
 Setelah itu coba jalankan aplikasi dengan command `node index.js`
 
 ```
-⚠ Dikarenakan tidak menggunakan nodemon, maka setiap kali menyimpan perubahan file diharuskan untuk restart server node terlebih dahulu dengan menekan ctrl+c dan jalankan command node index.js lagi
+⚠ Dikarenakan tidak menggunakan nodemon, 
+maka setiap kali menyimpan perubahan file d
+iharuskan untuk restart server node terlebih dahulu 
+dengan menekan `ctrl+c` dan jalankan command `node index.js` lagi
 ```
 
-2. Lakukan pembuatan file *.env* dan masukkan baris berikut <br>
-```PORT=5000```
+2. Lakukan pembuatan file **.env** dan masukkan baris berikut <br>
+```PORT=5000``` 
+Setelah itu ubahlah kode pada listening port menjadi berikut dan coba jalankan aplikasi kembali
+```
+...
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => {
+console.log(`Running on port ${PORT}`);
+})
+```
