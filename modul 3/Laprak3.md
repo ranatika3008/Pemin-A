@@ -234,17 +234,11 @@ module.exports = router;
 Berikut adalah gambaran bentuk data dari modul sebelumnya <br>
 
 | title | string |
-| :----:| :---: |
 | author| string |
-| :----:| :---: |
 | year | number |
-| :----:| :---: |
 | pages| number |
-| :----:| :---: |
 | summary| string |
-| :----:| :---: |
 | publisher| string |
-| :----:| :---: |
 
 1. Lakukan pembuatan direktori models di tingkat yang sama dengan index.js <br>
 ![ss 4.1](../modul%203/ss%203/4.1.png)
