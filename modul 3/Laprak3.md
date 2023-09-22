@@ -80,9 +80,9 @@ console.log('Mongo connected');
 Setelah itu coba jalankan aplikasi kembali <br>
 
 ## Pembuatan routing 
-1. Lakukan pembuatan direktori routes di tingkat yang sama dengan index.js
+1. Lakukan pembuatan direktori routes di tingkat yang sama dengan index.js <br>
 ![ss 2.1](../modul%203/ss%203/2.1.png)
-2. Buatlah file book.route.js di dalamnya
+2. Buatlah file book.route.js di dalamnya <br>
 ![ss 2.2](../modul%203/ss%203/2.2.png)
 3. Tambahkan baris kode berikut untuk fungsi getAllBooks <br>
 ```
@@ -149,13 +149,13 @@ app.listen(PORT, () => {
 })
 ```
 ![ss 2.5](../modul%203/ss%203/2.5.png)
-5. Uji salah satu endpoint dengan Postman
+5. Uji salah satu endpoint dengan Postman <br>
 ![ss 2.7](../modul%203/ss%203/2.7.png)
 
 ## Pembuatan controller
-1. Lakukan pembuatan direktori controllers di tingkat yang sama dengan index.js
+1. Lakukan pembuatan direktori controllers di tingkat yang sama dengan index.js <br>
 ![ss 3.1](../modul%203/ss%203/3.1.png)
-2. Buatlah file book.controller.js di dalamnya
+2. Buatlah file book.controller.js di dalamnya <br>
 ![ss 3.2](../modul%203/ss%203/3.2.png)
 3. Salin baris kode dari routes untuk fungsi getAllBooks <br>
 ```
@@ -228,23 +228,28 @@ router.delete('/:id', book.deleteBook);
 module.exports = router;
 ```
 ![ss 3.6](../modul%203/ss%203/3.6.png)
-7. Lakukan pengujian kembali, pastikan response tetap sama
+7. Lakukan pengujian kembali, pastikan response tetap sama <br>
 ![ss 3.7](../modul%203/ss%203/3.7.png)
 ## Pembuatan model
 Berikut adalah gambaran bentuk data dari modul sebelumnya <br>
 
-|----   | ---   |
-| title | string  |
-| author| string |
-| year    | number |
-| pages| number |
-| summary| string |
-| publisher| string |
-| --- | --- |
+| :----:| :---: |
+| :title: | :string: |
+| :----:| :---: |
+| :author:| :string: |
+| :----:| :---: |
+| :year: | :number: |
+| :----:| :---: |
+| :pages:| :number: |
+| :----:| :---: |
+| :summary:| :string: |
+| :----:| :---: |
+| :publisher:| :string: |
+| :----:| :---: |
 
-1. Lakukan pembuatan direktori models di tingkat yang sama dengan index.js
+1. Lakukan pembuatan direktori models di tingkat yang sama dengan index.js <br>
 ![ss 4.1](../modul%203/ss%203/4.1.png)
-2. Buatlah file book.model.js di dalamnya
+2. Buatlah file book.model.js di dalamnya <br>
 ![ss 4.2](../modul%203/ss%203/4.2.png)
 3. Tambahkan baris kode berikut sesuai dengan tabel di atas <br>
 ```
@@ -273,8 +278,8 @@ module.exports = mongoose.model('book', bookSchema);
 ```
 ![ss 4.3](../modul%203/ss%203/4.3.png)
 ## Operasi CRUD
-1. Hapus semua data pada collection books
-![ss 5.1](../modul%203/ss%203/5.1.png)
+1. Hapus semua data pada collection books <br>
+![ss 5.1](../modul%203/ss%203/5.1.png) <br>
 ![ss 5.2](../modul%203/ss%203/5.2.png)
 2. Lakukan import book.model.js pada file book.controller.js <br>
 ```
@@ -378,9 +383,9 @@ try {
 ...
 ```
 ![ss 5.9](../modul%203/ss%203/5.9.png)
-7. Tampilkan semua buku dengan Postman
+7. Tampilkan semua buku dengan Postman <br>
 ![ss 5.10](../modul%203/ss%203/5.10.png)
-8. Tampilkan buku Dilan 1990 dengan Postman
+8. Tampilkan buku Dilan 1990 dengan Postman <br>
 ![ss 5.11](../modul%203/ss%203/5.11.png)
 9. Lakukan perubahan pada fungsi updateBook <br>
 ```
@@ -406,7 +411,7 @@ try {
 ...
 ```
 ![ss 5.12](../modul%203/ss%203/5.12.png)
-10. Ubah judul buku Dilan 1990 menjadi “(NAMA PANGGILAN) 1991” dengan Postman
+10. Ubah judul buku Dilan 1990 menjadi “(NAMA PANGGILAN) 1991” dengan Postman <br>
 ![ss 5.13](../modul%203/ss%203/5.13.png)
 11. Lakukan perubahan pada fungsi deleteBook <br>
 ```
@@ -430,5 +435,5 @@ async function deleteBook(req, res) {
 ...
 ```
 ![ss 5.14](../modul%203/ss%203/5.14.png)
-12. Hapus buku Dilan 1990 dengan Postman
+12. Hapus buku Dilan 1990 dengan Postman <br>
 ![ss 5.15](../modul%203/ss%203/5.15.png)
