@@ -214,13 +214,13 @@ module.exports = router;
 
 ## Pembuatan model
 Berikut adalah gambaran bentuk data dari modul sebelumnya <br>
-| title  | string  |
-| author | string |
-| year | number |
-| pages | number |
-| summary | string |
-| publisher | string |
-| Content Cell  | Content Cell  |
+| title | string  |
+| author| string |
+| year    | number |
+| pages| number |
+| summary| string |
+| publisher| string |
+| Content Cell | Content Cell  |
 
 
 1. Lakukan pembuatan direktori models di tingkat yang sama dengan index.js
