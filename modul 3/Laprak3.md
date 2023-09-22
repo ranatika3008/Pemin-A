@@ -30,7 +30,9 @@ console.log(`Running on port ${PORT}`);
 
 Setelah itu coba jalankan aplikasi dengan command `node index.js`
 
-```⚠ Dikarenakan tidak menggunakan nodemon, maka setiap kali menyimpan perubahan file diharuskan untuk restart server node terlebih dahulu dengan menekan ctrl+c dan jalankan command node index.js lagi```
+```
+⚠ Dikarenakan tidak menggunakan nodemon, maka setiap kali menyimpan perubahan file diharuskan untuk restart server node terlebih dahulu dengan menekan ctrl+c dan jalankan command node index.js lagi
+```
 
-2. Lakukan pembuatan file *.env* dan masukkan baris berikut
+2. Lakukan pembuatan file *.env* dan masukkan baris berikut <br>
 ```PORT=5000```
