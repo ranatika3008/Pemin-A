@@ -214,12 +214,15 @@ module.exports = router;
 
 ## Pembuatan model
 Berikut adalah gambaran bentuk data dari modul sebelumnya <br>
-| title | string |
+| title  | string  |
 | author | string |
 | year | number |
 | pages | number |
 | summary | string |
 | publisher | string |
+| Content Cell  | Content Cell  |
+
+
 1. Lakukan pembuatan direktori models di tingkat yang sama dengan index.js
 2. Buatlah file book.model.js di dalamnya
 3. Tambahkan baris kode berikut sesuai dengan tabel di atas <br>
