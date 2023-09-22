@@ -233,18 +233,17 @@ module.exports = router;
 ## Pembuatan model
 Berikut adalah gambaran bentuk data dari modul sebelumnya <br>
 
+| title | string |
 | :----:| :---: |
-| :title: | :string: |
+| author| string |
 | :----:| :---: |
-| :author:| :string: |
+| year | number |
 | :----:| :---: |
-| :year: | :number: |
+| pages| number |
 | :----:| :---: |
-| :pages:| :number: |
+| summary| string |
 | :----:| :---: |
-| :summary:| :string: |
-| :----:| :---: |
-| :publisher:| :string: |
+| publisher| string |
 | :----:| :---: |
 
 1. Lakukan pembuatan direktori models di tingkat yang sama dengan index.js <br>
