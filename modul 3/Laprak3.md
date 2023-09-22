@@ -214,6 +214,7 @@ module.exports = router;
 
 ## Pembuatan model
 Berikut adalah gambaran bentuk data dari modul sebelumnya <br>
+|----   | ---   |
 | title | string  |
 | author| string |
 | year    | number |
