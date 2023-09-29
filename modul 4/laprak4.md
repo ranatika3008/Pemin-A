@@ -13,10 +13,8 @@ Setelah itu coba jalankan aplikasi dengan command,
 ```
 php -S localhost:8000 -t public
 ```
-![ss 1.1](../modul%204/ss%204/1.1.png)
-```
-⚠ Note: Pastikan buka cmd pada folder aplikasi
-```
+![ss 1.1](../modul%204/ss%204/1.1.png) <br>
+`⚠ Note: Pastikan buka cmd pada folder aplikasi` <br>
 Setelah aplikasi berhasil dijalankan, kita dapat membuka browser dengan url, `http://localhost:8000/get` , path yang akan kita akses akan berbentuk demikian, `http://{BASE_URL}{PATH}`, jika BASE_URL kita adalah `localhost:8000` dan PATH kita adalah `/get` , maka url akan berbentuk seperti diatas.
 
 ## POST, PUT, PATCH, DELETE, dan OPTIONS
