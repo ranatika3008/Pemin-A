@@ -7,6 +7,7 @@ php artisan make:model nama_model
 ```
 Namun karena perintah Artisan yang terbatas pada Lumen, pembuatan model harus dilakukan secara manual.
 1. Pastikan terdapat tabel users yang dibuat menggunakan migration pada bab sebelumnya. Berikut informasi kolom yang harus ada <br>
+
 | string    |
 | :---:     |
 | id        |
@@ -15,6 +16,7 @@ Namun karena perintah Artisan yang terbatas pada Lumen, pembuatan model harus di
 | name      |
 | email     |
 | password  |
+
 2. Bersihkan isi User.php yang ada sebelumnya dan isi dengan baris kode berikut
 ```
 <?php
@@ -258,9 +260,11 @@ $router->group(['prefix' => 'users'], function () use ($router) {
 ```
 4. Jalankan aplikasi pada route /users/default menggunakan Postman
 5. Jalankan aplikasi pada route /users/new dengan mengisi body sebagai berikut <br>
+
 | title     | string                |
 | :----:    | :---:                 |
 | name      | Cyno                  |
 | email     | cyno@akademia.ac.id   |
 | password  | mahamatra             |
+
 6. Jalankan aplikasi pada route /users/all
