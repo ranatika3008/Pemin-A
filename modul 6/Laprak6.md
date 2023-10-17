@@ -16,6 +16,7 @@ Namun karena perintah Artisan yang terbatas pada Lumen, pembuatan model harus di
 |  email     |
 |    password  |
 
+![ss 1.1](../modul%206/ss%206/1.1.png)
 2. Bersihkan isi User.php yang ada sebelumnya dan isi dengan baris kode berikut
 ```
 <?php
@@ -40,6 +41,7 @@ class User extends Model
     protected $hidden = [];
 }
 ```
+![ss 1.2](../modul%206/ss%206/1.2.png)
 
 ## Controller
 Controller merupakan bagian yang menjadi tempat berkumpulnya logika pemrograman yang digunakan untuk memisahkan organisasi data pada database. Dalam beberapa kasus, controller menjadi penghubung antara model dan view pada arsitektur MVC
@@ -67,6 +69,7 @@ class HomeController extends Controller
     //
 }
 ```
+![ss 2.1](../modul%206/ss%206/2.1.png)
 2. Ubah route / pada file routes/web.php menjadi seperti ini
 ```
 # Sebelum,
@@ -76,7 +79,9 @@ return $router->app->version();
 # Setelah,
 $router->get('/', ['uses' => 'HomeController@index']);
 ```
+![ss 2.2](../modul%206/ss%206/2.2.png)
 3. Jalankan aplikasi
+![ss 2.3](../modul%206/ss%206/2.3.png)
 
 ## Request Handler
 Request handler adalah fungsi yang digunakan untuk berinteraksi dengan request yang datang. Request handler dapat digunakan untuk melihat apa saja yang dikirimkan oleh user seperti parameter, query, dan body.
@@ -89,6 +94,7 @@ namespace App\Http\Controllers;
 // Import Library Request
 use Illuminate\Http\Request;
 ```
+![ss 3.1](../modul%206/ss%206/3.1.png)
 2. Ubah fungsi index menjadi
 ```
 <?php
@@ -114,7 +120,9 @@ class HomeController extends Controller
     //
 }
 ```
+![ss 3.2](../modul%206/ss%206/3.2.png)
 3. Jalankan aplikasi
+![ss 3.3](../modul%206/ss%206/3.3.png)
 
 ## Response Handler
 Response handler adalah fungsi yang digunakan untuk membentuk output yang diharapkan kepada user dan beberapa properti selain data seperti status code dan header.
@@ -126,7 +134,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response; // import library Response
 ```
-
+![ss 4.1](../modul%206/ss%206/4.1.png)
 2. Buatlah fungsi hello() yang berisi
 ```
 <?php
@@ -162,15 +170,16 @@ class HomeController extends Controller
     }
 }
 ```
-
+![ss 4.2](../modul%206/ss%206/4.2.png)
 3. Tambahkan route /hello pada file routes/web.php
 ```
 <?php
 $router->get('/', ['uses' => 'HomeController@index']);
 $router->get('/hello', ['uses' => 'HomeController@hello']); // route hello
 ```
-
+![ss 4.3](../modul%206/ss%206/4.3.png)
 4. Jalankan aplikasi pada route /hello
+![ss 4.4](../modul%206/ss%206/4.4.png)
 
 ## Penerapan
 1. Lakukan import model User dengan menambahkan baris berikut di bagian atas file
@@ -183,7 +192,7 @@ use App\Models\User; // import model User
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 ```
-
+![ss 5.1](../modul%206/ss%206/5.1.png)
 2. Tambahkan ketiga fungsi berikut di HomeController.php
 ```
 <?php
@@ -245,6 +254,7 @@ public function getUsers()
     // Tiga Fungsi
 }
 ```
+![ss 5.2](../modul%206/ss%206/5.2.png)
 3. Tambahkan ketiga route pada file routes/web.php menggunakan group route
 
 ```
@@ -257,7 +267,9 @@ $router->group(['prefix' => 'users'], function () use ($router) {
     $router->get('/all', ['uses' => 'HomeController@getUsers']);
 });
 ```
+![ss 5.3](../modul%206/ss%206/5.3.png)
 4. Jalankan aplikasi pada route /users/default menggunakan Postman
+![ss 5.4](../modul%206/ss%206/5.4.png)
 5. Jalankan aplikasi pada route /users/new dengan mengisi body sebagai berikut <br>
 
 | title     | string                |
@@ -266,4 +278,7 @@ $router->group(['prefix' => 'users'], function () use ($router) {
 | email     | cyno@akademia.ac.id   |
 | password  | mahamatra             |
 
+![ss 5.5](../modul%206/ss%206/5.5.png)
 6. Jalankan aplikasi pada route /users/all
+![ss 5.6](../modul%206/ss%206/5.6.png)
+![ss 5.7](../modul%206/ss%206/5.7.png)
