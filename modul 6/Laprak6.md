@@ -8,7 +8,7 @@ php artisan make:model nama_model
 Namun karena perintah Artisan yang terbatas pada Lumen, pembuatan model harus dilakukan secara manual.
 1. Pastikan terdapat tabel users yang dibuat menggunakan migration pada bab sebelumnya. Berikut informasi kolom yang harus ada <br>
 
-| string    |
+
 | :---:     |
 | id        |
 | createdAt |
